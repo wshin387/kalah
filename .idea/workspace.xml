@@ -2,13 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0397dd1f-82c3-4413-96be-844e7e99a905" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/kalah/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/enums/MoveResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/model/board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/model/board/CircularBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/model/house/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/model/score/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/view/KalahView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiKalahView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kalah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kalah.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kalah/Kalah.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/Kalah.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Kalah" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,9 +44,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kalah.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="kalah.model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\willi\Documents\GitHub\Kalah\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +89,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588921306038</updated>
-      <workItem from="1588921314005" duration="618000" />
+      <workItem from="1588921314005" duration="5722000" />
+      <workItem from="1589001579005" duration="1772000" />
+      <workItem from="1589003376627" duration="528000" />
+      <workItem from="1589003924307" duration="10835000" />
+      <workItem from="1589023600505" duration="1841000" />
+      <workItem from="1589076810696" duration="13531000" />
     </task>
     <servers />
   </component>
@@ -57,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
