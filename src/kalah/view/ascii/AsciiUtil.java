@@ -1,7 +1,7 @@
 package kalah.view.ascii;
 
-import kalah.model.house.House;
-import kalah.model.house.Store;
+import kalah.model.pit.House;
+import kalah.model.pit.Store;
 import kalah.model.score.Score;
 
 import java.util.Collections;

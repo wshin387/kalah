@@ -1,4 +1,4 @@
-package kalah.model.house;
+package kalah.model.pit;
 
 public class House extends Pit {
 

@@ -2,9 +2,9 @@ package kalah.controller;
 
 import kalah.enums.MoveResult;
 import kalah.model.board.Board;
-import kalah.model.house.House;
-import kalah.model.house.Pit;
-import kalah.model.house.Store;
+import kalah.model.pit.House;
+import kalah.model.pit.Pit;
+import kalah.model.pit.Store;
 import kalah.model.score.Score;
 
 import java.util.List;

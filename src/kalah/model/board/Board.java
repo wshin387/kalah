@@ -1,8 +1,8 @@
 package kalah.model.board;
 
-import kalah.model.house.House;
-import kalah.model.house.Pit;
-import kalah.model.house.Store;
+import kalah.model.pit.House;
+import kalah.model.pit.Pit;
+import kalah.model.pit.Store;
 
 import java.util.ArrayList;
 import java.util.HashMap;

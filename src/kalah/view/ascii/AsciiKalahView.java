@@ -2,8 +2,8 @@ package kalah.view.ascii;
 
 import com.qualitascorpus.testsupport.IO;
 import kalah.controller.GameController;
-import kalah.model.house.House;
-import kalah.model.house.Store;
+import kalah.model.pit.House;
+import kalah.model.pit.Store;
 import kalah.view.KalahView;
 
 import java.util.List;

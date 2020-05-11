@@ -1,4 +1,4 @@
-package kalah.model.house;
+package kalah.model.pit;
 
 public abstract class Pit {
     private static final int DEFAULT_SOW_AMOUNT = 1;
@@ -13,7 +13,7 @@ public abstract class Pit {
         this.seedCount = seedCount;
     }
 
-    public void setPrevPitIfNull(Pit pit) {
+    public void setOppositePitIfNull(Pit pit) {
         if (oppositePit != null) {
             return;
         }
