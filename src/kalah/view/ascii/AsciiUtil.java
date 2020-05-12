@@ -17,6 +17,7 @@ public class AsciiUtil {
     private static final char OPEN_BRACE_CHAR = '[';
     private static final char CLOSE_BRACE_CHAR = ']';
     private static final char WHITESPACE_CHAR = ' ';
+    private static final char TAB_CHAR = '\t';
 
     private int seedLength;
     private int houseLength;
@@ -39,7 +40,8 @@ public class AsciiUtil {
 
     public String formatScore(Score score) {
         StringBuilder sb = new StringBuilder();
-        sb.append("\tplayer ")
+        sb.append(TAB_CHAR)
+                .append("player ")
                 .append(score.getPlayerNumber())
                 .append(":")
                 .append(score.getScore());

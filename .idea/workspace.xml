@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0397dd1f-82c3-4413-96be-844e7e99a905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/model/board/CircularBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/model/board/CircularBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/model/house/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/model/house/Pit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kalah.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test701A03" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,7 +84,8 @@
       <workItem from="1589023600505" duration="1841000" />
       <workItem from="1589076810696" duration="14888000" />
       <workItem from="1589163905656" duration="143000" />
-      <workItem from="1589164067064" duration="599000" />
+      <workItem from="1589164067064" duration="6924000" />
+      <workItem from="1589250434859" duration="2404000" />
     </task>
     <servers />
   </component>
