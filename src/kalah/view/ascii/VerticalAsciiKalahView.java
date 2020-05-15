@@ -5,9 +5,9 @@ import kalah.controller.GameController;
 import kalah.model.pit.House;
 import kalah.model.pit.Store;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class VerticalAsciiKalahView extends AsciiKalahView {
     private VerticalAsciiUtil asciiUtil;
@@ -37,7 +37,7 @@ public class VerticalAsciiKalahView extends AsciiKalahView {
     }
 
     private void printEvenPlayerStores() {
-        Map<Integer, Store> playerStoreMap = new TreeMap<>();
+        Map<Integer, Store> playerStoreMap = new HashMap<>();
         int playerCount = gameController.getPlayerCount();
 
         for (int i=2; i<=playerCount; i+=2) {
@@ -49,7 +49,7 @@ public class VerticalAsciiKalahView extends AsciiKalahView {
     }
 
     private void printOddPlayerStores() {
-        Map<Integer, Store> playerStoreMap = new TreeMap<>();
+        Map<Integer, Store> playerStoreMap = new HashMap<>();
         int playerCount = gameController.getPlayerCount();
 
         for (int i=1; i<=playerCount; i+=2) {
@@ -61,7 +61,7 @@ public class VerticalAsciiKalahView extends AsciiKalahView {
     }
 
     private void printPitsForPlayers() {
-        Map<Integer, List<House>> houseMap = new TreeMap<>();
+        Map<Integer, List<House>> houseMap = new HashMap<>();
         int playerCount = gameController.getPlayerCount();
         for (int i=1; i<=playerCount; i++) {
             houseMap.put(i, gameController.getHousesForPlayer(i));
