@@ -10,8 +10,8 @@ import java.util.List;
 
 public class AsciiKalahView implements KalahView {
 
-    private IO io;
-    private GameController gameController;
+    protected IO io;
+    protected GameController gameController;
     private AsciiUtil asciiUtil;
 
     public AsciiKalahView(IO io, GameController gameController) {
@@ -51,7 +51,7 @@ public class AsciiKalahView implements KalahView {
         io.println(asciiUtil.formatWinners(gameController.getWinners()));
     }
 
-    private void printPlayers() {
+    protected void printPlayers() {
         for (int i = gameController.getPlayerCount(); i >= 1; i--) {
             printPitsForPlayer(i);
 
@@ -61,11 +61,11 @@ public class AsciiKalahView implements KalahView {
         }
     }
 
-    private void printHorizontalBorder() {
+    protected void printHorizontalBorder() {
         io.println(asciiUtil.horizontalBorder(gameController.getHouseCount()));
     }
 
-    private void printDivider() {
+    protected void printDivider() {
         io.println(asciiUtil.divider(gameController.getHouseCount()));
     }
 

@@ -7,7 +7,7 @@ import kalah.enums.MoveResult;
 import kalah.model.board.Board;
 import kalah.model.board.CircularBoard;
 import kalah.view.KalahView;
-import kalah.view.ascii.AsciiKalahView;
+import kalah.view.ascii.VerticalAsciiKalahView;
 
 /**
  * This class is the starting point for a Kalah implementation using
@@ -33,7 +33,7 @@ public class Kalah {
 		Board board = new CircularBoard(2, 4, 6);
 
 		this.gameController = new GameController(board);
-		this.view = new AsciiKalahView(io, gameController);
+		this.view = new VerticalAsciiKalahView(io, gameController);
 	}
 
 	private void playKalah() {
