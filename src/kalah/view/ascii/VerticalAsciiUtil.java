@@ -76,19 +76,7 @@ public class VerticalAsciiUtil extends AsciiUtil {
         sb.append(PIPE_CHAR);
 
         for (int j=1; j<=playerCount; j++) {
-
-            if (j%2 == 1) {
-                sb.append(WHITESPACE_CHAR)
-                        .append(rightAlignNumber(houseIndex+1, houseLength))
-                        .append(OPEN_BRACE_CHAR)
-                        .append(rightAlignNumber(houseMap.get(j).get(houseIndex).getSeedCount(), seedLength))
-                        .append(CLOSE_BRACE_CHAR)
-                        .append(WHITESPACE_CHAR)
-                        .append(PIPE_CHAR);
-                continue;
-            }
-
-            int housePos = houseCount - houseIndex - 1;
+            int housePos = (j%2 == 0) ? houseCount - houseIndex - 1 : houseIndex;
 
             sb.append(WHITESPACE_CHAR)
                     .append(rightAlignNumber(housePos+1, houseLength))

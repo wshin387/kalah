@@ -2,55 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0397dd1f-82c3-4413-96be-844e7e99a905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiKalahView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/capture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/continue_wrap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/double_wrap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/endinempty.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/exactlapcapture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/exactlapemptycapture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game_empty.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game_empty_houses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game_store.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/full_game_tie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/p1_continue.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/quit.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/simple_start.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/simple_two_moves.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/single_wrap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/useempty.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/wrapped.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.commands" beforeDir="false" afterPath="$PROJECT_DIR$/.commands" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kalah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kalah.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Kalah.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/Kalah.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiKalahView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiKalahView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/AsciiUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/capture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/capture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/continue_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/continue_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/double_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/double_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/endinempty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/endinempty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapcapture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/exactlapcapture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapemptycapture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/exactlapemptycapture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game_empty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty_houses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game_empty_houses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_store.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game_store.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_tie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/full_game_tie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/p1_continue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/p1_continue.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/quit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/quit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_start.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/simple_start.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_two_moves.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/simple_two_moves.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/single_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/single_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/test1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/useempty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/useempty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/wrapped.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications_horizontal/wrapped.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiKalahView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiKalahView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +149,7 @@
       <workItem from="1589164067064" duration="6924000" />
       <workItem from="1589250434859" duration="2497000" />
       <workItem from="1589254091742" duration="192000" />
-      <workItem from="1589508565015" duration="12276000" />
+      <workItem from="1589508565015" duration="12930000" />
     </task>
     <servers />
   </component>
