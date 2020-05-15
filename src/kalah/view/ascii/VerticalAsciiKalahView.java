@@ -48,6 +48,18 @@ public class VerticalAsciiKalahView extends AsciiKalahView {
         io.println(asciiUtil.evenPlayerStores(playerStoreMap, playerCount));
     }
 
+    private void printOddPlayerStores() {
+        Map<Integer, Store> playerStoreMap = new TreeMap<>();
+        int playerCount = gameController.getPlayerCount();
+
+        for (int i=1; i<=playerCount; i+=2) {
+            Store store = gameController.getStoreForPlayer(i);
+            playerStoreMap.put(i, store);
+        }
+
+        io.println(asciiUtil.oddPlayerStores(playerStoreMap, playerCount));
+    }
+
     private void printPitsForPlayers() {
         Map<Integer, List<House>> houseMap = new TreeMap<>();
         int playerCount = gameController.getPlayerCount();
@@ -59,17 +71,5 @@ public class VerticalAsciiKalahView extends AsciiKalahView {
         for (int i=0; i<houseCount; i++) {
             io.println(asciiUtil.rowOfPits(playerCount, i, houseCount, houseMap));
         }
-    }
-
-    private void printOddPlayerStores() {
-        Map<Integer, Store> playerStoreMap = new TreeMap<>();
-        int playerCount = gameController.getPlayerCount();
-
-        for (int i=1; i<=playerCount; i+=2) {
-            Store store = gameController.getStoreForPlayer(i);
-            playerStoreMap.put(i, store);
-        }
-
-        io.println(asciiUtil.oddPlayerStores(playerStoreMap, playerCount));
     }
 }
