@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0397dd1f-82c3-4413-96be-844e7e99a905" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiKalahView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kalah/view/ascii/VerticalAsciiKalahView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +147,9 @@
       <workItem from="1589164067064" duration="6924000" />
       <workItem from="1589250434859" duration="2497000" />
       <workItem from="1589254091742" duration="192000" />
-      <workItem from="1589508565015" duration="13772000" />
+      <workItem from="1589508565015" duration="14436000" />
+      <workItem from="1589619341561" duration="1108000" />
+      <workItem from="1589621218370" duration="30000" />
     </task>
     <servers />
   </component>
