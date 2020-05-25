@@ -6,10 +6,12 @@ import kalah.model.bmf.BMFMove;
 
 public class BMFAsciiKalahView extends AsciiKalahView {
     private BMFGameController gameController;
+    private BMFAsciiUtil asciiUtil;
 
     public BMFAsciiKalahView(IO io, BMFGameController gameController) {
         super(io, gameController);
         this.gameController = gameController;
+        this.asciiUtil = new BMFAsciiUtil(gameController.getTotalSeedCount(), gameController.getHouseCount());
     }
 
     @Override
@@ -19,9 +21,7 @@ public class BMFAsciiKalahView extends AsciiKalahView {
         }
 
         BMFMove bmfMove = gameController.getBMFMove();
-
-        io.println("Player P2 (Robot) chooses house #" + bmfMove.getHouseNumber() + " because " + bmfMove.getReason().toString());
-
+        io.println(asciiUtil.formatBMFMove(bmfMove));
         return String.valueOf(bmfMove.getHouseNumber());
     }
 }

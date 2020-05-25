@@ -3,12 +3,10 @@ package kalah;
 import com.qualitascorpus.testsupport.IO;
 import com.qualitascorpus.testsupport.MockIO;
 import kalah.controller.BMFGameController;
-import kalah.controller.GameController;
 import kalah.enums.MoveResult;
 import kalah.model.board.Board;
 import kalah.model.board.CircularBoard;
 import kalah.view.KalahView;
-import kalah.view.ascii.AsciiKalahView;
 import kalah.view.ascii.BMFAsciiKalahView;
 
 /**
