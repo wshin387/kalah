@@ -11,9 +11,9 @@ import java.util.List;
 
 public class GameController {
     
-    private Board board;
-    private ScoreController scoreController;
-    private int currentPlayerNumber;
+    protected Board board;
+    protected ScoreController scoreController;
+    protected int currentPlayerNumber;
 
     public GameController(Board board) {
         this.board = board;

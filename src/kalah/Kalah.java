@@ -2,12 +2,14 @@ package kalah;
 
 import com.qualitascorpus.testsupport.IO;
 import com.qualitascorpus.testsupport.MockIO;
+import kalah.controller.BMFGameController;
 import kalah.controller.GameController;
 import kalah.enums.MoveResult;
 import kalah.model.board.Board;
 import kalah.model.board.CircularBoard;
 import kalah.view.KalahView;
-import kalah.view.ascii.VerticalAsciiKalahView;
+import kalah.view.ascii.AsciiKalahView;
+import kalah.view.ascii.BMFAsciiKalahView;
 
 /**
  * This class is the starting point for a Kalah implementation using
@@ -17,7 +19,7 @@ public class Kalah {
 
 	private static final String QUIT_COMMAND = "q";
 
-	private GameController gameController;
+	private BMFGameController gameController;
 	private KalahView view;
 
 	public static void main(String... args) {
@@ -32,8 +34,8 @@ public class Kalah {
 	private void initializeControllerAndView(IO io) {
 		Board board = new CircularBoard(2, 4, 6);
 
-		this.gameController = new GameController(board);
-		this.view = new VerticalAsciiKalahView(io, gameController);
+		this.gameController = new BMFGameController(board);
+		this.view = new BMFAsciiKalahView(io, gameController);
 	}
 
 	private void playKalah() {

@@ -84,7 +84,30 @@ public abstract class Board {
         return pit;
     }
 
-    House getHouseForPlayer(int playerNumber, int houseNumber) {
+    public Pit fakeSow(int houseNumber, int playerNumber) {
+        Pit copyPit = Pit.copyOf(this.getHouseForPlayer(playerNumber, houseNumber));
+        int numSeeds = copyPit.removeSeeds();
+
+        while (numSeeds > 0) {
+            copyPit = copyPit.getNextPit();
+            numSeeds -= copyPit.checkAndSowSeeds(playerNumber);
+        }
+
+        Pit store = this.getStoreForPlayer(playerNumber);
+        Pit copyStore = Pit.copyOf(store);
+
+        copyStore.checkAndSowSeeds(copyPit.checkAndCapture(playerNumber), playerNumber);
+
+        if (copyStore.getSeedCount() - 1 > store.getSeedCount()) {
+            copyPit = new House(2, 1, -1);
+            copyPit.setOppositePitIfNull(new House(1, 1, -1));
+            return copyPit;
+        }
+
+        return copyPit;
+    }
+
+    public House getHouseForPlayer(int playerNumber, int houseNumber) {
         if (!houseMap.containsKey(playerNumber)) {
             throw new RuntimeException(String.format("Player (%d) does not have house (%d).", playerNumber, houseNumber));
         }

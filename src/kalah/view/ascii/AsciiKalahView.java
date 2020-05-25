@@ -12,7 +12,7 @@ public class AsciiKalahView implements KalahView {
 
     protected IO io;
     protected GameController gameController;
-    private AsciiUtil asciiUtil;
+    protected AsciiUtil asciiUtil;
 
     public AsciiKalahView(IO io, GameController gameController) {
         this.io = io;
