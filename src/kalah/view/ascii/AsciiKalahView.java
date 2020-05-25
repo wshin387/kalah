@@ -11,8 +11,8 @@ import java.util.List;
 public class AsciiKalahView implements KalahView {
 
     protected IO io;
-    protected GameController gameController;
-    protected AsciiUtil asciiUtil;
+    private GameController gameController;
+    private AsciiUtil asciiUtil;
 
     public AsciiKalahView(IO io, GameController gameController) {
         this.io = io;
@@ -51,7 +51,7 @@ public class AsciiKalahView implements KalahView {
         io.println(asciiUtil.formatWinners(gameController.getWinners()));
     }
 
-    protected void printPlayers() {
+    private void printPlayers() {
         for (int i = gameController.getPlayerCount(); i >= 1; i--) {
             printPitsForPlayer(i);
 

@@ -10,17 +10,17 @@ import java.util.List;
 public class AsciiUtil {
     private static final int EXTRA_HOUSE_CHARACTERS = 4;
     private static final int EXTRA_STORE_CHARACTERS = 2;
-    protected static final char PLAYER_CHAR = 'P';
-    protected static final char PIPE_CHAR = '|';
-    protected static final char PLUS_CHAR = '+';
-    protected static final char DASH_CHAR = '-';
-    protected static final char OPEN_BRACE_CHAR = '[';
-    protected static final char CLOSE_BRACE_CHAR = ']';
-    protected static final char WHITESPACE_CHAR = ' ';
-    protected static final char TAB_CHAR = '\t';
+    private static final char PLAYER_CHAR = 'P';
+    private static final char PIPE_CHAR = '|';
+    private static final char PLUS_CHAR = '+';
+    private static final char DASH_CHAR = '-';
+    private static final char OPEN_BRACE_CHAR = '[';
+    private static final char CLOSE_BRACE_CHAR = ']';
+    private static final char WHITESPACE_CHAR = ' ';
+    private static final char TAB_CHAR = '\t';
 
-    protected int seedLength;
-    protected int houseLength;
+    private int seedLength;
+    private int houseLength;
 
     public AsciiUtil(int seedCount, int houseCount) {
         this.seedLength = numLength(seedCount);
@@ -211,7 +211,7 @@ public class AsciiUtil {
         return (int) Math.log10(Math.abs(value)) + 1;
     }
 
-    protected String repeatString(String s, int times) {
+    private String repeatString(String s, int times) {
         StringBuilder sb = new StringBuilder();
         for (int i=0; i<times; i++) {
             sb.append(s);
@@ -220,7 +220,7 @@ public class AsciiUtil {
         return sb.toString();
     }
 
-    protected String repeatChar(char c, int times) {
+    private String repeatChar(char c, int times) {
         StringBuilder sb = new StringBuilder();
         for (int i=0; i<times; i++) {
             sb.append(c);
@@ -229,7 +229,7 @@ public class AsciiUtil {
         return sb.toString();
     }
 
-    protected String rightAlignNumber(int num, int totalLength) {
+    private String rightAlignNumber(int num, int totalLength) {
         int whiteSpaceLength = totalLength - numLength(num);
         StringBuilder sb = new StringBuilder();
         
