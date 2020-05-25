@@ -19,7 +19,7 @@ public class BMFAsciiKalahView extends AsciiKalahView {
     @Override
     public String promptMove() {
         if (gameController.getCurrentPlayerNumber() != bmfPlayerNumber) {
-            return io.readFromKeyboard(asciiUtil.promptMove(gameController.getCurrentPlayerNumber()));
+            return super.promptMove();
         }
 
         BMFMove bmfMove = gameController.getBMFMove();
