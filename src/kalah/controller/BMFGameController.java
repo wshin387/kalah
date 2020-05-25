@@ -7,7 +7,7 @@ import kalah.model.pit.Pit;
 
 public class BMFGameController extends GameController {
 
-    private static final int BMF_PLAYER_NUMBER = 2;
+    public static final int BMF_PLAYER_NUMBER = 2;
 
     public BMFGameController(Board board) {
         super(board);
