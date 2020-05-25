@@ -61,11 +61,11 @@ public class AsciiKalahView implements KalahView {
         }
     }
 
-    protected void printHorizontalBorder() {
+    private void printHorizontalBorder() {
         io.println(asciiUtil.horizontalBorder(gameController.getHouseCount()));
     }
 
-    protected void printDivider() {
+    private void printDivider() {
         io.println(asciiUtil.divider(gameController.getHouseCount()));
     }
 
