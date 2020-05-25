@@ -57,6 +57,6 @@ public class BMFGameController extends GameController {
         }
 
 
-        return new BMFMove(-1, BMFMoveReason.NONE);
+        return new BMFMove(-1, BMFMoveReason.NONE_AVAILABLE);
     }
 }
