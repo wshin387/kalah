@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test_specifications_horizontal" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/test_specifications" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -21,6 +22,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/kalah-vertical.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/kalah-bmf.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

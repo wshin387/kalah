@@ -2,3 +2,4 @@ javac -cp junit-3.8.2.jar;kalah.jar;bin src/kalah/Kalah.java
 java -cp junit-3.8.2.jar;kalah.jar;out junit.textui.TestRunner kalah.test.TestKalah
 java -cp junit-3.8.2.jar;kalah.jar;C:\Users\willi\Documents\GitHub\Kalah\out\production\Kalah junit.textui.TestRunner kalah.test.TestKalah
 java -cp junit-3.8.2.jar;kalah-vertical.jar;C:\Users\willi\Documents\GitHub\Kalah\out\production\Kalah junit.textui.TestRunner kalah.test.TestKalah
+java -cp junit-3.8.2.jar;kalah-bmf.jar;C:\Users\willi\Documents\GitHub\Kalah\out\production\Kalah junit.textui.TestRunner kalah.test.TestKalahBMFRobot

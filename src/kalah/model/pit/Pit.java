@@ -1,5 +1,8 @@
 package kalah.model.pit;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Pit {
     private static final int DEFAULT_SOW_AMOUNT = 1;
 
@@ -11,6 +14,42 @@ public abstract class Pit {
     public Pit(int playerNumber, int seedCount) {
         this.playerNumber = playerNumber;
         this.seedCount = seedCount;
+    }
+
+    public static Pit copyOf(Pit p) {
+        if (p == null) {
+            return null;
+        }
+
+        Map<Pit, Pit> map = new HashMap<>(); //real -> copy
+        Pit current = p;
+
+        while (current != null && !map.containsKey(current)) {
+            map.put(current, instantiatePit(current));
+            current = current.nextPit;
+        }
+
+        for (Map.Entry<Pit, Pit> entry: map.entrySet()) {
+            Pit pit = entry.getValue();
+            pit.nextPit = map.get(entry.getKey().nextPit);
+            pit.oppositePit = map.get(entry.getKey().oppositePit);
+        }
+
+        return map.get(p);
+    }
+
+    private static Pit instantiatePit(Pit p) {
+        Pit result;
+
+        if (p instanceof House) {
+            House h = (House) p;
+            result = new House(h.playerNumber, h.seedCount, h.getHouseNumber());
+        } else {
+            Store s = (Store) p;
+            result = new Store(s.playerNumber, s.seedCount);
+        }
+
+        return result;
     }
 
     public void setOppositePitIfNull(Pit pit) {

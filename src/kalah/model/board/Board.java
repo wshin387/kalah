@@ -14,6 +14,8 @@ public abstract class Board {
     private static final int MINIMUM_HOUSE_COUNT = 1;
     private static final int MINIMUM_INITIAL_SEED_COUNT = 1;
     private static final int MINIMUM_PLAYER_COUNT = 2;
+    private static final int DEFAULT_BMF_SEED_COUNT = 1;
+    private static final int DEFAULT_BMF_HOUSE_NUMBER = -1;
 
     protected int playerCount;
     protected int houseCount;
@@ -84,7 +86,38 @@ public abstract class Board {
         return pit;
     }
 
-    House getHouseForPlayer(int playerNumber, int houseNumber) {
+    public Pit fakeSow(int houseNumber, int playerNumber) {
+        Pit copyPit = Pit.copyOf(this.getHouseForPlayer(playerNumber, houseNumber));
+        int numSeeds = copyPit.removeSeeds();
+
+        while (numSeeds > 0) {
+            copyPit = copyPit.getNextPit();
+            numSeeds -= copyPit.checkAndSowSeeds(playerNumber);
+        }
+
+        Store store = this.getStoreForPlayer(playerNumber);
+        Store copyStore = Store.copyOf(store);
+
+        copyStore.checkAndSowSeeds(copyPit.checkAndCapture(playerNumber), playerNumber);
+
+        if (captureHasBeenMade(store, copyStore)) {
+            return bmfCapturableHouse(playerNumber);
+        }
+
+        return copyPit;
+    }
+
+    private boolean captureHasBeenMade(Store prevStore, Store store) {
+        return store.getSeedCount() - 1 > prevStore.getSeedCount();
+    }
+
+    private Pit bmfCapturableHouse(int playerNumber) {
+        Pit result = new House(playerNumber, DEFAULT_BMF_SEED_COUNT, DEFAULT_BMF_HOUSE_NUMBER);
+        result.setOppositePitIfNull(new House(nextPlayer(playerNumber), DEFAULT_BMF_SEED_COUNT, DEFAULT_BMF_HOUSE_NUMBER));
+        return result;
+    }
+
+    public House getHouseForPlayer(int playerNumber, int houseNumber) {
         if (!houseMap.containsKey(playerNumber)) {
             throw new RuntimeException(String.format("Player (%d) does not have house (%d).", playerNumber, houseNumber));
         }
